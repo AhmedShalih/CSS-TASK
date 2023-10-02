@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    
+    <style>
+        @import url(style.css);
+        h2{
+            color: red;  
+            font-family:Chiller;  
+            font-size: xx-large;
+            text-shadow: 0.5px 0.5px 4px goldenrod;
+        }
+        p{
+            text-align:start;
+            text-shadow:1px 1px 5px rgb(246, 66, 38);
+        
+        }
+        h4{
+            color: rgb(255, 0, 0);
+            text-shadow: 5px,5px,5px black;
+        }
+        h1{
+            background-color: hwb( 245 53% 1% / 0.2);
+        }
+        body{
+            background-image: url("wall.jpg");
+            background-size: ;
+        }
+        p::first-line{
+            color: cyan;
+            font-style: italic;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        h1::first-letter{
+            color: blue;
+            font-size: 55px;
+        }
+        .w::before{
+            content: "(Scarlet Witch)";
+        }
+        .m::after{
+            content: url(pp2.jpg);
+            background-attachment:scroll;
+            background-size: 50px 50px;
+        }
+        ::marker{
+            color: rgb(52, 246, 9);
+        }
+        ::selection{
+            color: rgb(0, 0, 4);
+            background-color: rgb(0, 85, 255);
+        }
+
+        #X:link{
+            color: rgb(230, 255, 2);
+        }
+        #X:visited{
+            color: black;
+        }
+        #X:hover{
+            color: rgb(255, 0, 0);
+            font-family: chiller;
+            font-size: medium;
+        }
+        
+        #X:active{
+            color: rgb(254, 6, 6);
+        }
+        
+        #f:link{
+            color: rgb(244, 7, 173);
+        }
+        #f:visited{
+            color: black;
+        }
+        #f:hover{
+            color: rgb(0, 76, 255);
+            font-family: jokerman;
+        }
+        #f:active{
+            color: rgb(248, 5, 5);
+        }
+
+        #I:link{
+            color: rgb(255, 95, 2);
+        }
+        #I:visited{
+            color: black;
+        }
+        #I:hover{
+            color: rgb(0, 2, 6);
+            font-style: italic;
+            background-color:bisque;
+        }
+        #I:active{
+            color: rgb(254, 6, 6);
+        }
+        input{
+            background-color: rgb(22, 189, 189);
+            color:darkblue;
+        }
+        input:hover{
+            background-color: aqua;
+        }
+    </style>
+</head>
+
+<body><center>
+    <h1 style="color: rgb(190, 177, 244);">MARVEL</h1>
+    <div>
+        <h2>SCARLET WITCH</h2>
+        <img src="sw.jpg" height="500" width="900">
+        <p class="w">Elizabeth Chase Olsen (born February 16, 1989) is an American actress. Born in Sherman Oaks, California, Olsen began acting at age four. She starred in her debut film role in the thriller Martha Marcy May Marlene in 2011, for which she was acclaimed and nominated for a Critics'Choice Movie Award among other accolades, followed by a role in the horror film Silent House. Olsen received a BAFTA Rising Star Award nomination and graduated from New York University two years later.</p>
+        <p>Olsen gained worldwide recognition for her portrayal of Wanda Maximoff / Scarlet Witch in the Marvel Cinematic Universe media franchise, appearing in the superhero films Avengers: Age of Ultron (2015), Captain America: Civil War (2016), Avengers: Infinity War (2018), Avengers: Endgame (2019), and Doctor Strange in the Multiverse of Madness (2022), as well as the miniseries WandaVision (2021). Her performance in WandaVision garnered her nominations for a Primetime Emmy Award and a Golden Globe Award.</p><br>
+        <p class="m">Olsen gained worldwide recognition for her portrayal of Wanda Maximoff / Scarlet Witch in the Marvel Cinematic Universe media franchise, appearing in the superhero films Avengers: Age of Ultron (2015), Captain America: Civil War (2016), Avengers: Infinity War (2018), Avengers: Endgame (2019), and Doctor Strange in the Multiverse of Madness (2022), as well as the miniseries WandaVision (2021). Her performance in WandaVision garnered her nominations for a Primetime Emmy Award and a Golden Globe Award.</p><br>
+    </center>
+    </div>
+    <ul>
+        <li>witch</li>
+        <li>scarlet</li>
+        <li>Wanda</li>
+        <li>Maximoff</li>
+        <li>olsen</li>
+    </ul>
+    <form>
+         <label>Test Box 1</label>   
+        <input type="text"><br><br>
+        <label>Test Box 2</label>   
+        <input type="text"><br><br>
+    </form>
+    <center>
+<button >
+    <a id="I" href="https://www.instagram.com/elizabetholsendaily/?hl=en" target="_blank">Elizabeth Olsen's Instagram</a>
+</button>
+<button >
+    <a id="f" href="https://www.facebook.com/OfficiallyElizabethOlsen/" target="_blank">Elizabeth Olsen's Facebook </a>
+</button>
+<button >
+    <a id="X" href="https://twitter.com/velizabetholsen?lang=en" target="_blank">Elizabeth Olsen's X-Acc</a>
+</button></center>
+</body>
+</html>
